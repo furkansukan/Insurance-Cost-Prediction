@@ -107,16 +107,6 @@ st.write("""
 """)
 
 
-# Başlık
-st.title("Violin Plot of Charges vs Region")
-
-# Grafik oluşturma
-plt.figure(figsize=(14, 6))
-sns.violinplot(x='region', y='charges', hue='sex', data=df, palette='rainbow', split=True)
-plt.title('Violin plot of charges vs region')
-
-# Grafiği Streamlit'te gösterme
-st.pyplot()
 
 
 # İstatistiksel Yorumlar
